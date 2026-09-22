@@ -1,17 +1,10 @@
+
 name: Build Rinseaid OmniRoute image
 
 on:
-  push:
-    branches: [build-k3-reasoning-image]
-    paths:
-      - Dockerfile
-      - package-lock.json
-      - package.json
-      - open-sse/**
-      - scripts/build/**
-      - .github/workflows/build-rinseaid-image.yml
   workflow_dispatch:
 
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
   contents: read
   packages: write

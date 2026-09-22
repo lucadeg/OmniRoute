@@ -1,3 +1,4 @@
+
 name: Wiki Sync
 
 # Keeps the GitHub wiki in sync with docs/ on every release that lands on main.
@@ -12,18 +13,9 @@ name: Wiki Sync
 # gated on regenerating those sources first.
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - "docs/**"
-      - "README.md"
-      - "AGENTS.md"
-      - "src/shared/constants/routingStrategies.ts"
-      - "config/i18n.json"
-      - "open-sse/mcp-server/server.ts"
-      - "scripts/docs/sync-wiki.mjs"
   workflow_dispatch:
 
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
   contents: write
 
